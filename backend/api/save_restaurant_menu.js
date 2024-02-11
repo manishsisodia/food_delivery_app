@@ -24,7 +24,7 @@ const save_restaurant_menu=(req,res)=>
 	{
 		if(err)
 		{
-			throw err//console.log("error1")
+			res.send("save_restaurant_menu_1")//throw err//console.log("error1")
 		}
 		else
 		{
@@ -39,7 +39,7 @@ const save_restaurant_menu=(req,res)=>
 				{
 					if(err)
 					{
-						res.send("error occured")
+						res.send("error occured in save_restaurant_menu_2")
 					}
 					else
 					{

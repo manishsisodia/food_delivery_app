@@ -12,7 +12,7 @@ const delete_dish_from_menu=(req,res)=>
 	{
 		if(err)
 		{
-			res.send("error")
+			res.send("error in delete_dish_from_menu_1")
 		}
 		else
 		{
@@ -26,7 +26,7 @@ const delete_dish_from_menu=(req,res)=>
 				{
 					if(err)
 					{
-						res.send(err)
+						res.send("error in delete_dish_from_menu_2")//res.send(err)
 					}
 					else
 					{

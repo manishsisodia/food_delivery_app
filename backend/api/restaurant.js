@@ -26,7 +26,7 @@ const save_restaurant_data=(req,res)=>
 	{
 		if(err)
 		{
-			res.send("Error Occured")//throw err//console.log("error1")
+			res.send("Error Occured save_restaurant_data_1")//throw err//console.log("error1")
 		}
 		else
 		{
@@ -37,19 +37,19 @@ const save_restaurant_data=(req,res)=>
 			else
 			{
 				const sql1="INSERT INTO restaurant_info SET ?"  //VALUES (name,type,email,phone,address,city,zip)
-	connection.query(sql1,data,(err,result)=>
-	{
-		if(err)
-		{
-			console.log(err)
-			res.send("error2")//throw err//res.send("error")
-		}
-		else
-		{
-			console.log("result----",result)
-			res.send("restaurant data saved successfully")
-		}
-	})
+				connection.query(sql1,data,(err,result)=>
+				{
+					if(err)
+					{
+						console.log(err)
+						res.send("error in save_restaurant_data_2")//throw err//res.send("error")
+					}
+					else
+					{
+						console.log("result----",result)
+						res.send("restaurant data saved successfully")
+					}
+				})
 			}
 		}
 	})

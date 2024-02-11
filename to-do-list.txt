@@ -1,0 +1,5 @@
+1. handle multiple users ---login/sign up
+2. JWT
+3. sending mail after sign up
+4. redis -------------------------------------------> DONE
+5. order table

@@ -10,7 +10,7 @@ connection.connect((err)=>
 {
 	if(err)
 	{
-		console.log("error")
+		console.log("error in configuration")
 	}
 	else
 	{

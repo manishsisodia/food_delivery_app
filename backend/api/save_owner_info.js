@@ -26,7 +26,7 @@ const save_owner_data=(req,res)=>
 	{
 		if(err)
 		{
-			throw err//console.log("error1")
+			res.send("error in save_owner_info_1")//throw err//console.log("error1")
 		}
 		else
 		{
@@ -42,7 +42,7 @@ const save_owner_data=(req,res)=>
 		if(err)
 		{
 			console.log(err)
-			res.send("error2")//throw err//res.send("error")
+			res.send("error in save_owner_info_2")//throw err//res.send("error")
 		}
 		else
 		{
