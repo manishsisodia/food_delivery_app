@@ -15,7 +15,7 @@ const update_restaurant_menu=(req,res)=>
 	{
 		if(err)
 		{
-			res.send("error")
+			res.send("error in update_restaurant_menu_1")
 		}
 		else
 		{
@@ -31,7 +31,7 @@ const update_restaurant_menu=(req,res)=>
 	{
 		if(err)
 		{
-			throw err//res.send("error")
+			res.send("update_restaurant_menu_2")//throw err//res.send("error")
 		}
 		else
 		{

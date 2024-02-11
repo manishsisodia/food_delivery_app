@@ -20,7 +20,7 @@ const update_working_time=(req,res)=>
 	{
 		if(err)
 		{
-			res.send("error")
+			res.send("error in update_working_time_1")
 		}
 		else
 		{
@@ -36,7 +36,7 @@ const update_working_time=(req,res)=>
 	{
 		if(err)
 		{
-			throw err//res.send("error")
+			res.send("error in update_working_time_2")//throw err//res.send("error")
 		}
 		else
 		{

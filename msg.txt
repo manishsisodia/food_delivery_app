@@ -1,0 +1,25 @@
+Hey Nishant,
+I am working on backend of food_delivery_app.
+
+Done 
+
+1. POST API 
+2. GET API
+3. PUT API
+4. DELETE API
+5. Middlewares
+6. Database configuration
+7. Validations
+	a) SQL injection
+	b) email validation
+	c) contact_number validation
+	d) Time validation
+	e) Data Redundancy
+	f) Et cetera
+
+In PROGRESS
+
+1. Redis
+2. sending mail to the rstaurant_id after registration
+3. JWT
+4. order table.

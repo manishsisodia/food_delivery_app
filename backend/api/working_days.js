@@ -28,7 +28,7 @@ const working_days=(req,res)=>{
 	{
 		if(err)
 		{
-			throw err//console.log("error1")
+			res.send("error in working_days_1")//throw err//console.log("error1")
 		}
 		else
 		{
@@ -42,7 +42,7 @@ const working_days=(req,res)=>{
 				connection.query(sql,data,(err,result)=>{
 				if(err)
 				{
-					res.send("error")
+					res.send("error in working_days_2")
 				}
 				else
 				{

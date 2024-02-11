@@ -3,14 +3,14 @@ const connection=mysql.createConnection({
 	host:"localhost",
 	user:"root",
 	database:"food_delivery_app",
-	password:"**********"
+	password:"PRAGATI.123"
 	//multipleStatements:false
 })
 connection.connect((err)=>
 {
 	if(err)
 	{
-		console.log("error")
+		console.log("error in configuration")
 	}
 	else
 	{

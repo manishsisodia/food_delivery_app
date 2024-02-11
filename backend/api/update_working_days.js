@@ -29,7 +29,7 @@ const update_working_days=(req,res)=>
 	{
 		if(err)
 		{
-			res.send("error")
+			res.send("error in update_working_days_1")
 		}
 		else
 		{
@@ -45,7 +45,7 @@ const update_working_days=(req,res)=>
 	{
 		if(err)
 		{
-			throw err//res.send("error")
+			res.send("error in update_working_days_2")//throw err//res.send("error")
 		}
 		else
 		{

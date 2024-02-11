@@ -1,0 +1,39 @@
+USE db_practice;
+
+DELIMITER @@
+ 
+START TRANSACTION;
+INSERT INTO cat1 VALUES("werrr","M");
+SELECT "TRANSACTION DONE" AS "";      //this prints TRANSACTION DONE-----IT IS SIMILAR TO COUT
+@@
+ROLLBACK;
+SELECT * FROM cat1;
+
+
+
+use db_practice;
+DELIMITER @@
+ CREATE TRIGGER T4
+     BEFORE INSERT
+     ON cat
+     FOR EACH ROW
+     BEGIN
+     INSERT INTO cat VALUES(31,"SONA","MANISH","F","2222-02-01");
+     END;
+     @@
+
+
+
+   DELIMITER @@  
+CREATE PROCEDURE p2()
+BEGIN
+SELECT * FROM  cat;
+END;
+@@
+CALL p2();
+SHOW PROCEDURE STATUS;
+SHOW TRIGGERS;
+CREATE VIEW customer_view AS
+SELECT id
+FROM cat
+WHERE gender = 'F';

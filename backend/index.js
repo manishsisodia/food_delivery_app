@@ -61,7 +61,7 @@ app.get("/retrieve_restaurant_menu",(req,res)=>
 	retrieve_restaurant_menu(req,res)
 })
 
-app.get("/get_working_days",(req,res)=>
+app.get("/get_working_days/:id", (req,res)=>
 {
 	get_working_days(req,res)
 })
